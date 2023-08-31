@@ -111,7 +111,7 @@ header p::first-line {
   clip-path: polygon(10% 0%, 90% 1%, 80% 95%, 15% 100%);
   animation: kopf 3s 1s infinite ease;
 }
-/* @keyframes kopf {
+@keyframes kopf {
   0% {
     transform: scalex(2);
   }
@@ -127,19 +127,31 @@ header p::first-line {
   100% {
     transform: skewY(10deg);
   }
-} */
+}
 
 .main {
   position: absolute;
   left: 20%;
+  top: 1280px;
   margin-top: -100px;
-  border: 2px solid rgb(223, 20, 20);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 3px double transparent;
+  border-right: 3px double transparent;
+  border-image: linear-gradient(
+      to right,
+      rgb(93, 102, 231),
+      rgb(228, 117, 43),
+      rgb(29, 223, 110)
+    )
+    1;
+
   height: 50em;
-  width: 40vw;
+  width: 43vw;
 }
 .mainP {
   float: right;
-  border: 1px solid black;
+  border: 1px double black;
   width: 50%;
   height: 55%;
   color: black;
