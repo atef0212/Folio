@@ -74,6 +74,7 @@ a:visited {
   text-shadow: 3px 4px 6px #0d45ce;
 }
 .header-section h1 {
+  text-shadow: 10px 5px 7px rgba(78, 160, 206, 0.86);
   font-family: "Tilt Prism", cursive;
 }
 .header-section h1::first-letter {
@@ -130,10 +131,11 @@ header p::first-line {
 }
 
 .main {
-  position: absolute;
-  left: 20%;
-  top: 1280px;
-  margin-top: -100px;
+  position: relative;
+  left: 27%;
+  top: 570px;
+  margin-top: -90px;
+
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   border-left: 3px double transparent;
@@ -145,16 +147,17 @@ header p::first-line {
       rgb(29, 223, 110)
     )
     1;
-
+  box-shadow: -2px -1px 11px 9px #8cacff;
   height: 50em;
   width: 43vw;
 }
 .mainP {
   float: right;
-  border: 1px double black;
+  border: 1px hidden black;
+  text-shadow: 10px 5px 7px rgba(29, 202, 206, 0.86);
   width: 50%;
   height: 55%;
-  color: black;
+  color: rgb(113, 132, 136);
   font-size: 2rem;
   margin: 5px;
   padding: 5px;
@@ -169,4 +172,29 @@ header p::first-line {
 }
 .main img {
   clip-path: circle(50% at 50% 50%);
+}
+/* .aside1 {
+  height: 100rem;
+  width: 20%;
+  background-color: rebeccapurple;
+  margin-top: -11.5rem;
+
+  position: absolute;
+} */
+table {
+  border-collapse: collapse;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+th {
+  margin-bottom: 200px;
+  border: 2px solid rgb(118, 172, 172);
+  width: 400px;
+  color: black;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+th:nth-child(odd) {
+  background-color: bisque;
 }
