@@ -128,3 +128,33 @@ header p::first-line {
     transform: skewY(10deg);
   }
 } */
+
+.main {
+  position: absolute;
+  left: 20%;
+  margin-top: -100px;
+  border: 2px solid rgb(223, 20, 20);
+  height: 50em;
+  width: 40vw;
+}
+.mainP {
+  float: right;
+  border: 1px solid black;
+  width: 50%;
+  height: 55%;
+  color: black;
+  font-size: 2rem;
+  margin: 5px;
+  padding: 5px;
+}
+.main h1 {
+  margin-top: 0;
+  padding-bottom: 20px;
+  color: #0d45ce;
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+}
+.main img {
+  clip-path: circle(50% at 50% 50%);
+}
