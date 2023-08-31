@@ -5,6 +5,7 @@
 }
 
 body {
+  cursor: alias;
   color: white;
   font-family: "Agdasima", sans-serif;
   background-image: url(./img/971.jpg);
@@ -23,8 +24,16 @@ nav {
   height: 2rem;
   width: 28rem;
 
-  border-left: 2px solid red;
+  border-left: 1px solid red;
   height: 4rem;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      rgb(93, 102, 231),
+      rgb(228, 117, 43),
+      rgb(29, 223, 110)
+    )
+    1;
 }
 ul {
   display: flex;
@@ -33,6 +42,15 @@ ul {
 }
 ul li {
   list-style: none;
+  transition: 3s;
+}
+ul a:hover {
+  color: blue;
+  background-color: rgb(155, 107, 49);
+  border-radius: 10px;
+}
+a:visited {
+  color: green;
 }
 .navli a {
   text-decoration: none;
@@ -53,6 +71,7 @@ ul li {
 .header-section p {
   color: rgb(236, 245, 242);
   font-size: 2rem;
+  text-shadow: 3px 4px 6px #0d45ce;
 }
 .header-section h1 {
   font-family: "Tilt Prism", cursive;
@@ -60,15 +79,52 @@ ul li {
 .header-section h1::first-letter {
   color: blue;
 }
-
-.kopf {
+header p::first-line {
+  color: whitesmoke;
+  font-style: italic;
+  font-weight: bolder;
+}
+.animation {
   position: relative;
   left: 1500px;
-  bottom: 10px;
+  /* border: 1px hidden rgb(204, 27, 27); */
+  height: 100vh;
+  width: 50rem;
+  bottom: 380px;
+
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      rgb(93, 102, 231),
+      rgb(228, 117, 43),
+      rgb(29, 223, 110)
+    )
+    1;
+}
+
+.kopf {
+  position: absolute;
+  left: 70px;
+  top: 812px;
   height: 10rem;
   width: 10rem;
   clip-path: polygon(10% 0%, 90% 1%, 80% 95%, 15% 100%);
-  animation: kopf 1s 1s infinite;
+  animation: kopf 3s 1s infinite ease;
 }
-@keyframes kopf {
-}
+/* @keyframes kopf {
+  0% {
+    transform: scalex(2);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: translate(0, -800px);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: skewY(10deg);
+  }
+} */
