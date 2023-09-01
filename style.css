@@ -20,8 +20,8 @@ body {
 }
 nav {
   position: relative;
-  left: 10%;
-  top: 10%;
+  left: 3%;
+  top: 26.5%;
   /* border: 2px solid black; */
   height: 2rem;
   width: 28rem;
@@ -207,4 +207,53 @@ th {
 }
 th:nth-child(odd) {
   background-color: bisque;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px hidden black;
+  gap: 5px;
+  height: 70%;
+  width: 50%;
+  position: relative;
+  left: 35%;
+}
+.projects .pro {
+  color: #0d45ce;
+  border: 1px solid black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+.project {
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 15px;
+  height: 60%;
+  width: 31%;
+  flex-grow: 1;
+  font-size: 1.3rem;
+}
+.prohead {
+  text-align: center;
+  color: blue;
+}
+.proimg {
+  width: fit-content;
+  height: 40%;
+  border-radius: 15%;
+  margin-left: 15%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btnpro {
+  width: 6.5rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #0d45ce;
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
