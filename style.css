@@ -47,8 +47,8 @@ ul li {
   transition: 3s;
 }
 ul a:hover {
-  color: blue;
-  background-color: rgb(155, 107, 49);
+  color: rgb(37, 216, 14);
+  background-color: rgb(197, 183, 166);
   border-radius: 10px;
 }
 a:visited {
@@ -154,12 +154,10 @@ header p::first-line {
   box-shadow: -2px -1px 11px 9px #8cacff;
   height: 50em;
   width: 43vw;
-  transform: 3s ease all;
+  transform: 1s ease all;
 }
 .main:hover {
   translate: 300px;
-  rotate: 30deg;
-  scale: 0.5;
 }
 .mainP {
   float: right;
@@ -213,35 +211,58 @@ th:nth-child(odd) {
   flex-direction: row;
   align-items: center;
   border: 2px hidden black;
-  gap: 5px;
-  height: 70%;
+
+  gap: 7px;
+  height: 60%;
   width: 50%;
   position: relative;
   left: 35%;
 }
 .projects .pro {
   color: #0d45ce;
-  border: 1px solid black;
-  width: 100%;
+  padding: 0.1rem;
+  /* border-bottom: 4px rgb(49, 141, 46) dotted; */
+  width: 20%;
+  margin-left: 2rem;
   position: absolute;
   top: 0;
+  left: 37%;
   text-align: center;
+  font-size: 2rem;
+  transition: 1s ease all;
+  border-right: 5px double rgba(0, 0, 0, 0.45);
+  border-radius: 0px 0px 40px 40px;
+}
+.pro:hover {
+  color: green;
+  background-color: #8cacff;
+  translate: 1rem;
 }
 .project {
   padding: 10px;
-  border: 2px solid red;
-  border-radius: 15px;
-  height: 60%;
+  /* border: 2px solid rgb(32, 28, 28);
+  border-radius: 15px; */
+  height: 80%;
   width: 31%;
+  margin: 0.2rem;
   flex-grow: 1;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  box-shadow: 5px 5px 15px 5px #000000;
+  transition: 2s ease all;
+  -webkit-border-radius: 0px 40px 0px 0px;
+  -moz-border-radius: 0px 40px 0px 0px;
+  border-radius: 0px 40px 0px 0px;
+}
+.project:hover {
+  translate: 1rem;
+  background-color: #8cacff;
 }
 .prohead {
   text-align: center;
   color: blue;
 }
 .proimg {
-  width: fit-content;
+  width: 70%;
   height: 40%;
   border-radius: 15%;
   margin-left: 15%;
@@ -249,11 +270,15 @@ th:nth-child(odd) {
   margin-bottom: 1rem;
 }
 .btnpro {
-  width: 6.5rem;
+  cursor: pointer;
+  width: 7.5rem;
   height: 2rem;
   font-size: 1.1rem;
-  color: white;
-  background-color: #0d45ce;
+  color: rgb(6, 59, 231);
+  /* background-color: #0d45ce; */
   margin-left: 1rem;
   margin-top: 2rem;
+  border-top: 6px inset rgb(29, 223, 110);
+  border-radius: 30px 27px 34px 28px;
+  font-weight: bold;
 }
