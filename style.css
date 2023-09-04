@@ -157,7 +157,7 @@ header p::first-line {
   transform: 1s ease all;
 }
 .main:hover {
-  translate: 300px;
+  translate: 1rem;
 }
 .mainP {
   float: right;
@@ -182,7 +182,7 @@ header p::first-line {
   clip-path: circle(50% at 50% 50%);
 }
 .aside1 {
-  height: 100rem;
+  height: 137.2rem;
   width: 23%;
   background-image: url(./img/stars-7088.gif);
   margin-top: -1079px;
@@ -274,11 +274,85 @@ th:nth-child(odd) {
   width: 7.5rem;
   height: 2rem;
   font-size: 1.1rem;
-  color: rgb(6, 59, 231);
+  color: #0d45ce;
   /* background-color: #0d45ce; */
   margin-left: 1rem;
   margin-top: 2rem;
   border-top: 6px inset rgb(29, 223, 110);
   border-radius: 30px 27px 34px 28px;
   font-weight: bold;
+}
+.contact {
+  color: black;
+  background-color: #f2f2f2;
+  position: relative;
+  left: 35%;
+  width: 50%;
+  height: 33rem;
+  border-bottom: 6px inset rgba(2, 0, 36, 1);
+  border-top: 6px inset rgb(29, 223, 110);
+  border-radius: 30px 27px 34px 28px;
+}
+form {
+  margin: 1rem;
+}
+input {
+  font-size: 1.3rem;
+  text-align: center;
+  height: 2rem;
+  width: 50%;
+  margin-bottom: 0.5rem;
+  border: 3px inset rgb(29, 223, 110);
+  border-radius: 30px 27px 34px 28px;
+}
+
+#con {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+  font-size: 2rem;
+}
+textarea {
+  border: 3px inset rgb(29, 223, 110);
+  border-radius: 30px 27px 34px 28px;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+label {
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem;
+}
+.submit-btn {
+  margin-top: 1rem;
+  margin-left: 18rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: blue;
+  border-top: 4px inset rgb(29, 223, 110);
+  border-bottom: 6px inset rgba(2, 0, 36, 1);
+  border-radius: 30px 27px 34px 28px;
+  font-weight: bold;
+  -webkit-box-shadow: 11px 0px 22px 10px rgba(246, 31, 255, 0.73);
+  box-shadow: 11px 0px 22px 10px rgba(246, 31, 255, 0.73);
+}
+.submit-btn a {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  border: 2px solid black;
+  height: 8rem;
+  background-color: beige;
+  position: relative;
+  width: 100vw;
+}
+
+.iconsf {
+  position: absolute;
+  left: 40.5%;
+  border: 1px hidden black;
+  width: 19%;
+  margin-top: 1rem;
 }
