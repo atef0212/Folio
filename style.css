@@ -22,9 +22,9 @@ nav {
   position: relative;
   left: 3%;
   top: 26.5%;
-  /* border: 2px solid black; */
+  padding-left: 0.5rem;
   height: 2rem;
-  width: 28rem;
+  width: 25rem;
 
   border-left: 1px solid red;
   height: 4rem;
@@ -43,12 +43,13 @@ ul {
   justify-content: space-around;
 }
 ul li {
+  margin-right: 0.6rem;
   list-style: none;
   transition: 3s;
 }
 ul a:hover {
   color: rgb(37, 216, 14);
-  background-color: rgb(197, 183, 166);
+  box-shadow: 8px -8px 20px 5px rgba(79, 255, 236, 0.93);
   border-radius: 10px;
 }
 a:visited {
@@ -152,12 +153,16 @@ header p::first-line {
     1;
 
   box-shadow: -2px -1px 11px 9px #8cacff;
-  height: 50em;
+  height: 50rem;
   width: 43vw;
   transform: 1s ease all;
 }
 .main:hover {
   translate: 1rem;
+}
+#skillimg {
+  margin-left: 0.5rem;
+  opacity: 0.6;
 }
 .mainP {
   float: right;
@@ -167,8 +172,8 @@ header p::first-line {
   height: 55%;
   color: rgb(113, 132, 136);
   font-size: 2rem;
-  margin: 5px;
-  padding: 5px;
+  margin: 0.3rem;
+  padding: 0.3rem;
 }
 .main h1 {
   margin-top: 0;
@@ -176,7 +181,15 @@ header p::first-line {
   color: #0d45ce;
   font-size: 4rem;
   text-align: center;
-  color: black;
+}
+#skillimg {
+  margin-left: 2rem;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+.main h1:hover {
+  color: greenyellow;
 }
 .main img {
   clip-path: circle(50% at 50% 50%);
@@ -212,7 +225,7 @@ th:nth-child(odd) {
   align-items: center;
   border: 2px hidden black;
 
-  gap: 7px;
+  gap: 0.4rem;
   height: 60%;
   width: 50%;
   position: relative;
@@ -221,7 +234,7 @@ th:nth-child(odd) {
 .projects .pro {
   color: #0d45ce;
   padding: 0.1rem;
-  /* border-bottom: 4px rgb(49, 141, 46) dotted; */
+
   width: 20%;
   margin-left: 2rem;
   position: absolute;
@@ -239,9 +252,8 @@ th:nth-child(odd) {
   translate: 1rem;
 }
 .project {
-  padding: 10px;
-  /* border: 2px solid rgb(32, 28, 28);
-  border-radius: 15px; */
+  padding: 0.5rem;
+
   height: 80%;
   width: 31%;
   margin: 0.2rem;
@@ -317,6 +329,7 @@ textarea {
   border-radius: 30px 27px 34px 28px;
   margin-top: 0.5rem;
   text-align: center;
+  width: 50em;
 }
 label {
   font-size: 1.5rem;
@@ -341,10 +354,11 @@ label {
   text-decoration: none;
 }
 footer {
+  margin-top: 0.2rem;
   text-align: center;
   border: 2px solid black;
-  height: 8rem;
-  background-color: beige;
+  height: 20rem;
+  background-color: lightgray;
   position: relative;
   width: 100vw;
 }
@@ -355,4 +369,111 @@ footer {
   border: 1px hidden black;
   width: 19%;
   margin-top: 1rem;
+}
+iframe {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+}
+@media screen and (max-width: 500px) {
+  html {
+    background-image: url(./img/971.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header-section {
+    margin-left: 3rem;
+    top: 5%;
+  }
+  nav {
+    top: 2%;
+    left: 25%;
+  }
+  .navli a {
+    font-size: 2rem;
+  }
+  .animation {
+    display: none;
+  }
+  .main {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 3px double transparent;
+    border-right: 3px double transparent;
+    border-image: linear-gradient(
+        to right,
+        rgb(93, 102, 231),
+        rgb(228, 117, 43),
+        rgb(29, 223, 110)
+      )
+      1;
+
+    right: 100%;
+    top: 24rem;
+    width: 100vw;
+    height: 100%;
+  }
+  #skillimg {
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .main p {
+    float: left;
+    font-size: 1.2rem;
+    width: 80vw;
+    height: 20%;
+  }
+
+  .aside1 {
+    display: none;
+  }
+  .projects {
+    width: 100vw;
+    top: 50%;
+    font-size: 0.5rem;
+    height: 80%;
+    gap: 1rem;
+  }
+  .projects .pro {
+    font-size: 1.1rem;
+  }
+  .project {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  .proimg {
+    width: 70%;
+    height: 30%;
+  }
+  .btnpro {
+    margin-left: 0.1rem;
+    font-size: 1rem;
+    width: 6rem;
+  }
+
+  .contact {
+    width: 100%;
+    top: 55%;
+  }
+  .contact #textarea {
+    width: 100%;
+  }
+  .submit-btn {
+    margin-left: 20%;
+  }
+  footer {
+    border: 2px solid rebeccapurple;
+    width: 100%;
+    top: 55%;
+    height: 20rem;
+    margin-left: 8rem;
+  }
+  footer iframe {
+    width: 100%;
+    height: 65%;
+    left: 0%;
+  }
 }
