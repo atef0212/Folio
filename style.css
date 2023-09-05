@@ -872,13 +872,13 @@ iframe {
     border: 2px solid greenyellow;
 
     font-size: 1rem;
-    width: 8rem;
+    width: 5rem;
     height: 2rem;
   }
 
   .contact {
     width: 100%;
-    top: 1500px;
+    top: 1600px;
     left: 1%;
     height: 100px;
   }
@@ -912,7 +912,7 @@ iframe {
     text-shadow: 3px 4px 6px #0d45ce;
     border: 2px solid rebeccapurple;
     width: 100%;
-    top: 3110px;
+    top: 3210px;
     left: 1%;
     height: 20rem;
   }
