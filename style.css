@@ -19,8 +19,8 @@ body {
 
 nav {
   position: relative;
-  left: 2%;
-  top: 26.5%;
+  left: 25%;
+  top: 10.5%;
   padding-left: 0.5rem;
   height: 2rem;
   width: 28rem;
@@ -44,16 +44,16 @@ ul {
 ul li {
   margin-right: 0.6rem;
   list-style: none;
-  transition: 3s;
+  transition: 0.4s;
 }
-/* ul a:hover {
+ul a:hover {
   color: rgb(37, 216, 14);
   box-shadow: 8px -8px 20px 5px rgba(79, 255, 236, 0.93);
   border-radius: 10px;
-} */
-/* a:visited {
+}
+a:visited {
   color: green;
-} */
+}
 .navli a {
   padding-left: 1rem;
   text-decoration: none;
@@ -92,7 +92,7 @@ header p::first-line {
 .animation {
   position: relative;
   left: 1500px;
-  /* border: 1px hidden rgb(204, 27, 27); */
+  border: 1px hidden rgb(204, 27, 27);
   height: 100vh;
   width: 50rem;
   bottom: 380px;
@@ -114,19 +114,29 @@ header p::first-line {
   height: 10rem;
   width: 10rem;
   clip-path: polygon(10% 0%, 90% 1%, 80% 95%, 15% 100%);
-  animation: kopf 3s 1s infinite ease;
+  animation: kopf 0.1s 1s infinite ease;
 }
 @keyframes kopf {
   0% {
     transform: scalex(2);
   }
   25% {
+    opacity: 0.5;
     transform: rotate(45deg);
+    translate: 0 0;
   }
   50% {
     transform: translate(0, -800px);
   }
+  60% {
+    transform: translate(-1200px, -800px);
+  }
+
   75% {
+    transform: translate(0px, -800px);
+    transform: rotate(-45deg);
+  }
+  90% {
     transform: rotate(-45deg);
   }
   100% {
@@ -358,7 +368,12 @@ footer {
   text-align: center;
   border: 2px solid black;
   height: 20rem;
-  background-color: lightgray;
+  background: rgb(56, 48, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 48, 51, 0.7679446778711485) 0%,
+    rgba(125, 143, 150, 0.16290266106442575) 100%
+  );
   position: relative;
   width: 100vw;
 }
