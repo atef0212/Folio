@@ -5,7 +5,7 @@
 }
 html {
   background-image: url(./img/971.jpg);
-  background-size: 100% 54.6%;
+  background-size: 100% 55.6%;
   background-repeat: no-repeat;
 }
 
@@ -95,7 +95,7 @@ header p::first-line {
   border: 1px hidden rgb(204, 27, 27);
   height: 100vh;
   width: 50rem;
-  bottom: 380px;
+  bottom: 480px;
 
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(
@@ -379,9 +379,8 @@ label {
 footer {
   margin-top: 0.2rem;
   text-align: center;
-  border: 5px solid rgb(35, 87, 230);
-
-  height: 20rem;
+  border: 2px solid rgb(28, 40, 209);
+  height: 23rem;
   background: rgb(56, 48, 51);
   background: linear-gradient(
     90deg,
@@ -397,12 +396,12 @@ footer {
   left: 40.5%;
   border: 1px hidden black;
   width: 19%;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 iframe {
   position: absolute;
   left: 35%;
-  top: 35%;
+  top: 45%;
 }
 
 /* Media Qury */
@@ -936,5 +935,9 @@ iframe {
     width: 100%;
     height: 65%;
     left: 0%;
+    top: 69%;
+  }
+  footer .iconsf {
+    top: 38%;
   }
 }
