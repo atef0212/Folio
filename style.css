@@ -456,7 +456,8 @@ iframe {
   }
   .navli a {
     padding-bottom: 1px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: blue;
   }
   .header-section {
     top: 15%;
@@ -469,7 +470,7 @@ iframe {
   }
   .header-section p {
     padding-left: 4px;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .aside1 {
     display: none;
@@ -519,7 +520,7 @@ iframe {
     gap: 1rem;
   }
   .projects .pro {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .project {
     color: rgb(236, 245, 242);
@@ -541,7 +542,7 @@ iframe {
 
   .contact {
     width: 100%;
-    top: 800px;
+    top: 900px;
     left: 1%;
   }
   .contact #textarea {
@@ -567,7 +568,7 @@ iframe {
     text-shadow: 3px 4px 6px #0d45ce;
     border: 2px solid rebeccapurple;
     width: 100%;
-    top: 810px;
+    top: 910px;
     left: 1%;
     height: 20rem;
   }
