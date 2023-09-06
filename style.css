@@ -16,7 +16,7 @@ body {
 
   overflow-x: hidden;
 }
-
+/* <!-- Nav header section --> */
 nav {
   position: relative;
   left: 25%;
@@ -144,6 +144,9 @@ header p::first-line {
   }
 }
 
+/*  mean
+   section  --> */
+
 .main {
   position: relative;
   left: 35%;
@@ -229,6 +232,10 @@ th {
 th:nth-child(odd) {
   background-color: bisque;
 }
+
+/* <!-- 
+section projects --> */
+
 .projects {
   display: flex;
   flex-direction: row;
@@ -304,6 +311,9 @@ th:nth-child(odd) {
   border-radius: 30px 27px 34px 28px;
   font-weight: bold;
 }
+
+/* <!-- <section contact --> */
+
 .contact {
   color: black;
   background-color: #f2f2f2;
@@ -363,15 +373,19 @@ label {
 .submit-btn a {
   text-decoration: none;
 }
+
+/* <!-- section footer --> */
+
 footer {
   margin-top: 0.2rem;
   text-align: center;
-  border: 2px solid black;
+  border: 5px solid rgb(35, 87, 230);
+
   height: 20rem;
   background: rgb(56, 48, 51);
   background: linear-gradient(
     90deg,
-    rgba(56, 48, 51, 0.7679446778711485) 0%,
+    rgba(21, 95, 124, 0.768) 0%,
     rgba(125, 143, 150, 0.16290266106442575) 100%
   );
   position: relative;
@@ -390,6 +404,9 @@ iframe {
   left: 35%;
   top: 35%;
 }
+
+/* Media Qury */
+
 @media screen and (max-width: 575px) {
   * {
     padding: 0;
@@ -759,8 +776,6 @@ iframe {
       rgba(63, 155, 251, 0.9528186274509804) 0%,
       rgba(34, 227, 153, 0.6502976190476191) 58%
     );
-    /* background-position: center;
-    background-size: contain; */
   }
   .animation {
     display: none;
@@ -790,7 +805,7 @@ iframe {
   .navli a {
     padding-bottom: 1px;
     font-size: 2rem;
-    color: blue;
+    color: rgb(8, 8, 8);
   }
   .header-section {
     top: 15%;
@@ -910,7 +925,7 @@ iframe {
     color: rgb(236, 245, 242);
 
     text-shadow: 3px 4px 6px #0d45ce;
-    border: 2px solid rebeccapurple;
+    border: 1px solid rebeccapurple;
     width: 100%;
     top: 3210px;
     left: 1%;
